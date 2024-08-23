@@ -6,7 +6,7 @@ function index() {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
         </div>
 
@@ -14,63 +14,55 @@ function index() {
           <div className="grid sm:grid-cols-2 gap-6 md:gap-12">
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                Can I cancel at anytime?
+                Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                Yes, you can cancel anytime no questions are asked while you
-                cancel but we would highly appreciate if you will give us some
-                feedback.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                My team has credits. How do we use them?
+              Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                Once your team signs up for a subscription plan. This is where
-                we sit down, grab a cup of coffee and dial in the details.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                How does Preline's pricing work?
+              Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                Our subscriptions are tiered. Understanding the task at hand and
-                ironing out the wrinkles is key.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                How secure is Preline?
+              Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                Protecting the data you trust to Preline is our first priority.
-                This part is really crucial in keeping the project in line to
-                completion.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                Do you offer discounts?
+              Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                We've built in discounts at each tier for teams. The time has
-                come to bring those ideas and plans to life.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800">
-                What is your refund policy?
+              Lorem ipsum dolor sit amet?
               </h3>
               <p className="mt-2 text-gray-600">
-                We offer refunds. We aim high at being focused on building
-                relationships with our clients and community.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem odio tenetur ut voluptatibus necessitatibus rerum fuga dignissimos minus reprehenderit.
               </p>
             </div>
           </div>

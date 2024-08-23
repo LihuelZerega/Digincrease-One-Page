@@ -6,8 +6,8 @@ function index() {
     <div>
 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <BlurFade inView className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight">Desarrollo Web</h2>
-    <p className="mt-1 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas molestias voluptates eveniet ad quis voluptatem.</p>
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight bg-clip-text bg-gradient-to-l from-lime-600 to-lime-500 text-transparent">Desarrollo Web</h2>
+    <p className="mt-1 text-gray-600">Como marca, es escencial estar presente en el mundo digital. En Digincrease, nos enfocamos tanto en la creatividad y seguridad de un sitio, como en la experiencia del usuario.</p>
   </BlurFade>
 
   <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-start">
@@ -21,21 +21,21 @@ function index() {
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-            1 user
+          Servicio sin coste
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-            Plan features
+          Analizamos tu empresa
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-            Product support
+          Encontramos puntos fuertes y puntos debiles
           </span>
         </li>
       </ul>
@@ -97,7 +97,7 @@ function index() {
     </BlurFade>
 
     {/* LANDING PAGE */}
-    <BlurFade inView delay={0.75} className="flex flex-col border-2 border-lime-600 text-center shadow-xl rounded-xl p-8">
+    <BlurFade inView delay={0.75} className="flex flex-col border-2 border-lime-500 text-center shadow-xl rounded-xl p-8">
       <p className="mb-3"><span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-lime-100 text-lime-800">Más Vendido</span></p>
       <h4 className="font-medium text-lg text-gray-800">Landing Page</h4>
       <span className="mt-5 font-bold text-5xl text-gray-800">
@@ -143,7 +143,7 @@ function index() {
         </li>
       </ul>
 
-      <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-600 text-white hover:bg-lime-700 focus:outline-none focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+      <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
       Comprar Ahora
       </a>
     </BlurFade>
@@ -980,7 +980,7 @@ function index() {
             <td className="py-5 px-6 pl-[100px]">
             <a
               href=""
-              className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-400 text-white hover:bg-lime-500 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
+              className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
             >
               Comprar ahora
             </a>
