@@ -48,7 +48,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          The best one I've ever come across.
+          The best one I ve ever come across.
         </p>
       </div>
 
