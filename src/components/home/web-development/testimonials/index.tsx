@@ -12,7 +12,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          " Truly great template and costumer support. "
+          Truly great template and costumer support.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          " The best one I've ever come across. "
+          The best one I've ever come across.
         </p>
       </div>
 
@@ -73,7 +73,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          " This is a truly beautiful template. "
+          This is a truly beautiful template.
         </p>
       </div>
 
@@ -130,7 +130,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          " There one theme that you want. "
+          There one theme that you want.
         </p>
       </div>
 
@@ -170,7 +170,7 @@ function index() {
 
       <div className="mt-2 sm:mt-6">
         <p className="text-gray-800">
-          " Great design and thorough documentation. "
+           Great design and thorough documentation. 
         </p>
       </div>
 
