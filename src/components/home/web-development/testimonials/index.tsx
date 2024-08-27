@@ -8,18 +8,12 @@ import InterbussinexLogo from "@/images/InterbussinexLogo.png";
 
 function index() {
   return (
-    <div>
-<div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto border-b bg-gray-50">
+    <div className='bg-gray-50 border-b'>
+<div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-20 md:grid-cols-3 lg:grid-cols-5 lg:gap-8">
     <div className="text-center">
-      <div className="w-auto h-8 mx-auto flex items-center justify-center">
+      <div className="w-auto h-8 mx-auto flex items-center justify-center pb-2">
         <Image src={LullaxLogo} alt="Lullax Logo" width={70} height={70} />
-      </div>
-
-      <div className="mt-2 sm:mt-6">
-        <p className="text-gray-800">
-          Truly great template and costumer support.
-        </p>
       </div>
 
       <div className="shrink-0 flex justify-center gap-x-1 mt-3">
@@ -42,15 +36,10 @@ function index() {
     </div>
 
     <div className="text-center">
-    <div className="w-auto h-8 mx-auto flex items-center justify-center">
+    <div className="w-auto h-8 mx-auto flex items-center justify-center pb-2">
         <Image src={PiletasRamiroLogo} alt="Lullax Logo" width={70} height={70} />
       </div>
 
-      <div className="mt-2 sm:mt-6">
-        <p className="text-gray-800">
-          The best one I ve ever come across.
-        </p>
-      </div>
 
       <div className="shrink-0 flex justify-center gap-x-1 mt-3">
         <svg className="size-4 text-lime-500" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,16 +62,10 @@ function index() {
     </div>
 
     <div className="text-center">
-    <div className="w-auto h-8 mx-auto flex items-center justify-center">
+    <div className="w-auto h-8 mx-auto flex items-center justify-center pb-2">
         <Image src={CenterCarLogo} alt="Lullax Logo" width={130} height={130} />
       </div>
 
-      <div className="mt-2 sm:mt-6">
-        <p className="text-gray-800">
-          This is a truly beautiful template.
-        </p>
-      </div>
-
       <div className="shrink-0 flex justify-center gap-x-1 mt-3">
         <svg className="size-4 text-lime-500" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor"/>
@@ -103,16 +86,10 @@ function index() {
     </div>
 
     <div className="text-center">
-    <div className="w-auto h-8 mx-auto flex items-center justify-center">
+    <div className="w-auto h-8 mx-auto flex items-center justify-center pb-2">
         <Image src={RosemenLogo} alt="Lullax Logo" width={130} height={130} />
       </div>
 
-      <div className="mt-2 sm:mt-6">
-        <p className="text-gray-800">
-          There one theme that you want.
-        </p>
-      </div>
-
       <div className="shrink-0 flex justify-center gap-x-1 mt-3">
         <svg className="size-4 text-lime-500" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M27.0352 1.6307L33.9181 16.3633C34.2173 16.6768 34.5166 16.9903 34.8158 16.9903L50.0779 19.1845C50.9757 19.1845 51.275 20.4383 50.6764 21.0652L39.604 32.3498C39.3047 32.6632 39.3047 32.9767 39.3047 33.2901L41.998 49.2766C42.2973 50.217 41.1002 50.8439 40.5017 50.5304L26.4367 43.3208C26.1375 43.3208 25.8382 43.3208 25.539 43.3208L11.7732 50.8439C10.8754 51.1573 9.97763 50.5304 10.2769 49.59L12.9702 33.6036C12.9702 33.2901 12.9702 32.9767 12.671 32.6632L1.29923 21.0652C0.700724 20.4383 0.999979 19.4979 1.89775 19.4979L17.1598 17.3037C17.459 17.3037 17.7583 16.9903 18.0575 16.6768L24.9404 1.6307C25.539 0.69032 26.736 0.69032 27.0352 1.6307Z" fill="currentColor"/>
@@ -133,14 +110,8 @@ function index() {
     </div>
 
     <div className="text-center">
-    <div className="w-auto h-8 mx-auto flex items-center justify-center">
+    <div className="w-auto h-8 mx-auto flex items-center justify-center pb-2">
         <Image src={InterbussinexLogo} alt="Lullax Logo" width={50} height={50} />
-      </div>
-
-      <div className="mt-2 sm:mt-6">
-        <p className="text-gray-800">
-           Great design and thorough documentation. 
-        </p>
       </div>
 
       <div className="shrink-0 flex justify-center gap-x-1 mt-3">
