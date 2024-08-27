@@ -1,9 +1,8 @@
-"use client";
 import React, { useContext } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { CallToActionTranslations } from "@/lib/translations";
 
-function index() {
+function Index() {
   const { language } = useContext(LanguageContext);
   const t = CallToActionTranslations[language];
 
@@ -46,4 +45,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

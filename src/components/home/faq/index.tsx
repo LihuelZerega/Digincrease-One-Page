@@ -1,9 +1,8 @@
-"use client";
 import React, { useContext } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { FrecuentlyAskedQuestionsTranslations } from "@/lib/translations";
 
-function index() {
+function Index() {
   const { language } = useContext(LanguageContext);
   const t = FrecuentlyAskedQuestionsTranslations[language];
 
@@ -60,4 +59,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

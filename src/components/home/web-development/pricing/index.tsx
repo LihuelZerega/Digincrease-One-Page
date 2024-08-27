@@ -1,11 +1,10 @@
-"use client";
 import React, { useContext } from "react";
 import BlurFade from '@/components/magicui/blur-fade'
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MessageTranslations } from "@/lib/translations";
 import { WebDevelopmentTranslations } from "@/lib/translations";
 
-function index() {
+function Index() {
 
   const { language } = useContext(LanguageContext);
   const translations = MessageTranslations[language];
@@ -1052,4 +1051,4 @@ function index() {
   )
 }
 
-export default index
+export default Index
