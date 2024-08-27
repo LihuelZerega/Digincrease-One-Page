@@ -1,11 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import NavBar from "@/components/home/nav";
 import Hero from "@/components/home/hero";
 import Pricing from "@/components/home/web-development/pricing";
-import Brands from "@/components/home/web-development/brands";
 import Testimonials from "@/components/home/web-development/testimonials";
 import Steps from "@/components/home/marketing/steps";
 import CallToAction from "@/components/home/call-to-action";
@@ -44,10 +42,13 @@ export default function Home() {
       <LanguageModal isOpen={isModalOpen} onClose={closeModal} />
       <NavBar />
       <Hero />
-      <Pricing />
-      {/* <Brands /> */}
+      <div id="web-development">
+        <Pricing />
+      </div>
       <Testimonials />
-      <Steps />
+      <div id="marketing">
+        <Steps />
+      </div>
       <CallToAction />
       <Faq />
       <Footer />

@@ -1,47 +1,84 @@
-import React from 'react'
+import React, { useContext } from "react";
 import BlurFade from '@/components/magicui/blur-fade'
+import { LanguageContext } from "@/contexts/LanguageContext";
+import { MessageTranslations } from "@/lib/translations";
+import { WebDevelopmentTranslations } from "@/lib/translations";
 
 function index() {
+
+  const { language } = useContext(LanguageContext);
+  const translations = MessageTranslations[language];
+  const t = WebDevelopmentTranslations[language];
+
+  const phoneNumber = "5491133816778";
+
+  const OnePagemessageClick = () => {
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${OnePagemessage}`,
+      "_blank"
+    );
+  };
+
+  const LandingPagemessageClick = () => {
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${LandingPagemessage}`,
+      "_blank"
+    );
+  };
+
+  const EcommerceClick = () => {
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${Ecommercemessage}`,
+      "_blank"
+    );
+  };
+
+  const OnePagemessage = encodeURIComponent(translations.OnePageWhatsappMessage);
+
+  const LandingPagemessage = encodeURIComponent(translations.LandingPageWhatsappMessage);
+
+  const Ecommercemessage = encodeURIComponent(translations.EcommerceWhatsappMessage);
+
   return (
     <div>
 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <BlurFade inView className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight bg-clip-text bg-gradient-to-l from-lime-600 to-lime-500 text-transparent">Desarrollo Web</h2>
-    <p className="mt-1 text-gray-600">Como marca, es escencial estar presente en el mundo digital. En Digincrease, nos enfocamos tanto en la creatividad y seguridad de un sitio, como en la experiencia del usuario.</p>
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight bg-clip-text bg-gradient-to-l from-lime-600 to-lime-500 text-transparent">{t.title}</h2>
+    <p className="mt-1 text-gray-600">{t.description}</p>
   </BlurFade>
 
   <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:items-start">
 
     {/* ASESORIA GRATUITA */}
     <BlurFade inView delay={0.25} className="flex flex-col border border-gray-200 text-center rounded-xl p-8">
-      <h4 className="font-medium text-lg text-gray-800">Asesoría</h4>
-      <span className="mt-7 font-bold text-5xl text-lime-600">Gratis</span>
+      <h4 className="font-medium text-lg text-gray-800">{t.asesoriaTitle}</h4>
+      <span className="mt-7 font-bold text-5xl text-lime-600">{t.asesoriaPrice}</span>
 
       <ul className="mt-7 space-y-2.5 text-sm">
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Servicio sin coste
+          {t.asesoriaItem1}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Analizamos tu empresa
+          {t.asesoriaItem2}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Encontramos puntos fuertes y puntos debiles
+          {t.asesoriaItem3}
           </span>
         </li>
       </ul>
 
-      <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50" href="#">
-        Agendar asesoria
+      <a href="https://calendly.com/digincrease/asesoria-inicial-gratuita" className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50">
+     {t.asesoriaButton}
       </a>
     </BlurFade>
 
@@ -52,99 +89,99 @@ function index() {
         <span className="font-bold text-2xl">$</span>
         89
       </span>
-      <p className="mt-2 text-sm text-gray-500">Potenciá tu presencia en línea, promocioná tus servicios y capturá potenciales clientes.</p>
+      <p className="mt-2 text-sm text-gray-500">{t.onepageDescription}</p>
 
       <ul className="mt-7 space-y-2.5 text-sm">
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-            Navegación Fluida y Anclada
+          {t.onepageItem1}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-           Diseño Visual Atractivo en una sola página
+          {t.onepageItem2}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Enfoque en la Historia o Mensaje Central
+          {t.onepageItem3}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Optimización para Dispositivos Móviles
+          {t.onepageItem4}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Llamadas a la Acción Claras
+          {t.onepageItem5}
           </span>
         </li>
       </ul>
 
       <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-50" href="#">
-        Comprar Ahora
+      {t.onepageButton}
       </a>
     </BlurFade>
 
     {/* LANDING PAGE */}
     <BlurFade inView delay={0.75} className="flex flex-col border-2 border-lime-500 text-center shadow-xl rounded-xl p-8">
-      <p className="mb-3"><span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-lime-100 text-lime-800">Más Vendido</span></p>
+      <p className="mb-3"><span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-lime-100 text-lime-800">{t.landingpageMostSold}</span></p>
       <h4 className="font-medium text-lg text-gray-800">Landing Page</h4>
       <span className="mt-5 font-bold text-5xl text-gray-800">
         <span className="font-bold text-2xl">$</span>
         39
       </span>
-      <p className="mt-2 text-sm text-gray-500">Sitio web a medida. Capturá, convertí y potenciá clientes interesados en sus servicios.</p>
+      <p className="mt-2 text-sm text-gray-500">{t.landingpageDescription}</p>
 
       <ul className="mt-7 space-y-2.5 text-sm">
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Enfoque en un Solo Objetivo o Conversión
+          {t.landingpageItem1}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Contenido Conciso y Persuasivo
+          {t.landingpageItem2}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Diseño Minimalista y Enfocado
+          {t.landingpageItem3}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Llamadas a la Acción Prominentes
+          {t.landingpageItem4}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Pruebas Sociales y Elementos de Confianza
+          {t.landingpageItem5}
           </span>
         </li>
       </ul>
 
       <a className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-      Comprar Ahora
+      {t.landingpageButton}
       </a>
     </BlurFade>
 
@@ -155,41 +192,41 @@ function index() {
         <span className="font-bold text-2xl -me-2">$</span>
         149
       </span>
-      <p className="mt-2 text-sm text-gray-500">Ideal para aquellos que venden productos y desean ampliar su alcance y llegar a una audiencia global.</p>
+      <p className="mt-2 text-sm text-gray-500">{t.ecommerceDescription}</p>
 
       <ul className="mt-7 space-y-2.5 text-sm">
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Catálogo de productos con categorías y colecciones
+          {t.ecommerceItem1}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Carrito de compras y proceso de pago seguro
+          {t.ecommerceItem2}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Opciones de búsqueda avanzada
+          {t.ecommerceItem3}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Administracion de pedidos, clientes, divisas y regiones
+          {t.ecommerceItem4}
           </span>
         </li>
 
         <li className="flex gap-x-2">
           <svg className="shrink-0 mt-0.5 size-4 text-lime-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           <span className="text-gray-800 text-left">
-          Gestión de inventario, codigos de descuentos y targetas de regalo
+          {t.ecommerceItem5}
           </span>
         </li>
       </ul>
@@ -1003,7 +1040,7 @@ function index() {
       ¿Necesitas un plan personalizado?
       </p>
 
-      <a href="/contacto" type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+      <a href="https://calendly.com/digincrease/asesoria-inicial-gratuita" type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
         Contactanos!
       </a>
     </div>

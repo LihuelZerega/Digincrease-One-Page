@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import DigincreaseLogo from "@/images/digincrease-logo.png";
+import { LanguageContext } from "@/contexts/LanguageContext";
+import { NavBarTranslations } from "@/lib/translations";
 
-function index() {
+function Navbar() {
+  const { language } = useContext(LanguageContext);
+  const t = NavBarTranslations[language];
+
   return (
     <div>
       <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7 lg:py-4 fixed bg-white border-b border-neutral-100">
@@ -11,7 +16,6 @@ function index() {
             <a
               className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
               href="../templates/creative-agency/index.html"
-              aria-label="Preline"
             >
               <Image
                 src={DigincreaseLogo}
@@ -27,13 +31,13 @@ function index() {
               href="https://digincrease.com/sobre-nosotros-digincrease/"
               className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             >
-              Conocenos
+              {t.aboutUs}
             </a>
             <a
               href=""
               className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
             >
-              Contactanos!
+              {t.contactUs}
             </a>
 
             <div className="md:hidden">
@@ -87,29 +91,20 @@ function index() {
             aria-labelledby="hs-navbar-hcail-collapse"
           >
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-12 md:mt-0">
-              {/* <div>
-                <a
-                  className="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400"
-                  href="#"
-                  aria-current="page"
-                >
-                  Work
-                </a>
-              </div> */}
               <div>
                 <a
                   className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-8 decoration-lime-400 hover:underline-lime-400"
-                  href="#"
+                  href="#marketing"
                 >
-                  Marketing
+                  {t.marketing}
                 </a>
               </div>
               <div>
                 <a
                   className="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-8 decoration-lime-400 hover:underline-lime-400"
-                  href="#"
+                  href="#web-development"
                 >
-                  Desarrollo Web
+                  {t.webDevelopment}
                 </a>
               </div>
             </div>
@@ -120,4 +115,4 @@ function index() {
   );
 }
 
-export default index;
+export default Navbar;
