@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import RetroGrid from "@/components/magicui/retro-grid";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";

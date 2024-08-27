@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { FrecuentlyAskedQuestionsTranslations } from "@/lib/translations";

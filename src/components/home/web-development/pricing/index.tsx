@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import BlurFade from '@/components/magicui/blur-fade'
 import { LanguageContext } from "@/contexts/LanguageContext";
