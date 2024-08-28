@@ -12,24 +12,24 @@ import Footer from "@/components/home/footer";
 import LanguageModal from "@/components/home/language-modal";
 
 export default function Home() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    const checkLocation = async () => {
-      try {
-        const response = await fetch("https://ipapi.co/json/");
-        const data = await response.json();
+  // useEffect(() => {
+  //   const checkLocation = async () => {
+  //     try {
+  //       const response = await fetch("https://ipapi.co/json/");
+  //       const data = await response.json();
 
-        if (data.country_code === "AR") {
-          router.push("/ar");
-        }
-      } catch (error) {
-        console.error("Error fetching location:", error);
-      }
-    };
+  //       if (data.country_code === "AR") {
+  //         router.push("/ar");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching location:", error);
+  //     }
+  //   };
 
-    checkLocation();
-  }, [router]);
+  //   checkLocation();
+  // }, [router]);
 
   const [isModalOpen, setModalOpen] = useState(true);
 

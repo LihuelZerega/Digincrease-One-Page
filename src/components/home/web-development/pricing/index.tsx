@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import BlurFade from "@/components/magicui/blur-fade";
+import ShineBorder from "@/components/magicui/shine-border";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MessageTranslations } from "@/lib/translations";
 import { WebDevelopmentTranslations } from "@/lib/translations";
@@ -266,134 +267,137 @@ function Index() {
           </BlurFade>
 
           {/* LANDING PAGE */}
-          <BlurFade
-            inView
-            delay={0.75}
-            className="flex flex-col border-2 border-lime-500 text-center shadow-xl rounded-xl p-8"
-          >
-            <p className="mb-3">
-              <span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-lime-100 text-lime-800">
-                {t.landingpageMostSold}
-              </span>
-            </p>
-            <h4 className="font-medium text-lg text-gray-800">Landing Page</h4>
-            <span className="mt-5 font-bold text-5xl text-gray-800">
-              <span className="font-bold text-2xl">$</span>
-              39
-            </span>
-            <p className="mt-2 text-sm text-gray-500">
-              {t.landingpageDescription}
-            </p>
-
-            <ul className="mt-7 space-y-2.5 text-sm">
-              <li className="flex gap-x-2">
-                <svg
-                  className="shrink-0 mt-0.5 size-4 text-lime-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-800 text-left">
-                  {t.landingpageItem1}
-                </span>
-              </li>
-
-              <li className="flex gap-x-2">
-                <svg
-                  className="shrink-0 mt-0.5 size-4 text-lime-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-800 text-left">
-                  {t.landingpageItem2}
-                </span>
-              </li>
-
-              <li className="flex gap-x-2">
-                <svg
-                  className="shrink-0 mt-0.5 size-4 text-lime-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-800 text-left">
-                  {t.landingpageItem3}
-                </span>
-              </li>
-
-              <li className="flex gap-x-2">
-                <svg
-                  className="shrink-0 mt-0.5 size-4 text-lime-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-800 text-left">
-                  {t.landingpageItem4}
-                </span>
-              </li>
-
-              <li className="flex gap-x-2">
-                <svg
-                  className="shrink-0 mt-0.5 size-4 text-lime-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span className="text-gray-800 text-left">
-                  {t.landingpageItem5}
-                </span>
-              </li>
-            </ul>
-
-            <button
-              type="button"
-              onClick={LandingPagemessageClick}
-              className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none"
+          <BlurFade inView delay={0.75}>
+            <ShineBorder
+              className="relative w-full flex flex-col border text-center shadow-xl rounded-lg p-8 items-center justify-center overflow-hidden bg-background md:shadow-xl"
+              color={["#9dc353", "#76b658", "#3daa5b"]}
             >
-              {t.landingpageButton}
-            </button>
+              <p className="mb-3">
+                <span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg text-xs uppercase font-semibold bg-lime-100 text-lime-800">
+                  {t.landingpageMostSold}
+                </span>
+              </p>
+              <h4 className="font-medium text-lg text-gray-800">
+                Landing Page
+              </h4>
+              <span className="mt-5 font-bold text-5xl text-gray-800">
+                <span className="font-bold text-2xl">$</span>
+                39
+              </span>
+              <p className="mt-2 text-sm text-gray-500">
+                {t.landingpageDescription}
+              </p>
+
+              <ul className="mt-7 space-y-2.5 text-sm">
+                <li className="flex gap-x-2">
+                  <svg
+                    className="shrink-0 mt-0.5 size-4 text-lime-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span className="text-gray-800 text-left">
+                    {t.landingpageItem1}
+                  </span>
+                </li>
+
+                <li className="flex gap-x-2">
+                  <svg
+                    className="shrink-0 mt-0.5 size-4 text-lime-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span className="text-gray-800 text-left">
+                    {t.landingpageItem2}
+                  </span>
+                </li>
+
+                <li className="flex gap-x-2">
+                  <svg
+                    className="shrink-0 mt-0.5 size-4 text-lime-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span className="text-gray-800 text-left">
+                    {t.landingpageItem3}
+                  </span>
+                </li>
+
+                <li className="flex gap-x-2">
+                  <svg
+                    className="shrink-0 mt-0.5 size-4 text-lime-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span className="text-gray-800 text-left">
+                    {t.landingpageItem4}
+                  </span>
+                </li>
+
+                <li className="flex gap-x-2">
+                  <svg
+                    className="shrink-0 mt-0.5 size-4 text-lime-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span className="text-gray-800 text-left">
+                    {t.landingpageItem5}
+                  </span>
+                </li>
+              </ul>
+
+              <button
+                type="button"
+                onClick={LandingPagemessageClick}
+                className="mt-5 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-700 disabled:opacity-50 disabled:pointer-events-none"
+              >
+                {t.landingpageButton}
+              </button>
+            </ShineBorder>
           </BlurFade>
 
           {/* E-COMMERCE */}
@@ -2324,7 +2328,9 @@ function Index() {
                     className="py-5 ps-6 pe-6 text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                     scope="row"
                   >
-                    {t.compareModelsDistributionAcrossGlobalNetworOfHighPerformanceLowLatencyServers}
+                    {
+                      t.compareModelsDistributionAcrossGlobalNetworOfHighPerformanceLowLatencyServers
+                    }
                   </th>
 
                   <td className="py-5 px-6">

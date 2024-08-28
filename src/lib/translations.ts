@@ -211,3 +211,28 @@
       response4: "Los sitios web son completamente personalizados para cada cliente, ya que trabajamos con código personalizado.",
     }
   }
+
+  export const MarketingTranslations = {
+    en: {
+      title: "Marketing",
+      description: "It is a crucial service due to its ability to connect companies with their audience effectively and efficiently in an increasingly digitalized world.",
+      steps: "Steps",
+      step1Title: "Marketing research and analysis:",
+      step1Description: "A market research focused on competitors and their communication aspects is based on analyzing how other companies that offer products or services similar to yours are communicating. This includes observing their messages, the tone they use, the channels where they are active (such as social networks, blogs, advertising, etc.), and how they interact with their audience. The goal is to understand what they are doing well and where there are opportunities for your business to stand out, allowing you to develop a more effective and differentiated communication strategy that better attracts your target audience.",
+      step2Title: "Brand identity:",
+      step2Description: "The creation of the brand identity is based on defining who your company is and how you want it to be perceived by your customers. This includes designing visual elements like your logo, colors, and typography, as well as defining your communication's values, mission, and tone of voice. It's crucial because a strong brand identity allows your company to stand out, build trust, and establish an emotional connection with your audience. Without a clear identity, your company runs the risk of blending in with the competition and losing opportunities to attract and retain customers.",
+      step3Title: "Creating digital strategies:",
+      step3Description: "Creating digital strategies on Meta (Facebook and Instagram) is based on combining organic tactics, such as regular posts and audience engagement, with paid strategies, such as targeted ads. Organic strategies allow you to build long-term relationships with your audience, while paid strategies amplify your reach quickly and precisely. It's crucial to have both because it ensures a continuous and effective presence, allowing your brand to remain visible, relevant, and competitive in an ever-changing digital environment. Without these strategies, it's difficult to reach your target audience and maximize ROI.",
+     },
+    es: {
+      title: "Marketing",
+      description: "Es un servicio crucial debido a su capacidad para conectar a las empresas con su audiencia de manera efectiva y eficiente en un mundo cada vez más digitalizado.",
+      steps: "Pasos",
+      step1Title: "Investigación y análisis del mercado:",
+      step1Description: "Una investigación de mercado enfocada en competidores y sus aspectos comunicacionales se basa en analizar cómo se están comunicando otras empresas que ofrecen productos o servicios similares al tuyo. Esto incluye observar sus mensajes, el tono que utilizan, los canales donde están activos (como redes sociales, blogs, publicidad, etc.), y cómo interactúan con su audiencia. El objetivo es entender qué están haciendo bien y dónde hay oportunidades para que tu negocio destaque, permitiéndote desarrollar una estrategia de comunicación más efectiva y diferenciada que atraiga mejor a tu público objetivo.",
+      step2Title: "Identidad de marca:",
+      step2Description: "La creación de la identidad de marca se basa en definir quién es tu empresa y cómo quieres que sea percibida por tus clientes. Esto incluye el diseño de elementos visuales como el logotipo, colores, y tipografía, así como la definición de valores, misión y el tono de voz de tu comunicación. Es crucial porque una identidad de marca sólida permite que tu empresa se destaque, construya confianza y establezca una conexión emocional con tu audiencia. Sin una identidad clara, tu empresa corre el riesgo de mezclarse con la competencia y perder oportunidades de atraer y retener clientes.",
+      step3Title: "Creación de estrategias digitales:",
+      step3Description: "La creación de estrategias digitales en Meta (Facebook e Instagram) se basa en combinar tácticas orgánicas, como publicaciones regulares y engagement con la audiencia, con estrategias de pago, como anuncios segmentados. Las estrategias orgánicas te permiten construir relaciones a largo plazo con tu audiencia, mientras que las de pago amplifican tu alcance de manera rápida y precisa. Es crucial contar con ambas porque te asegura una presencia continua y efectiva, permitiendo que tu marca se mantenga visible, relevante y competitiva en un entorno digital en constante cambio. Sin estas estrategias, es difícil alcanzar a tu público objetivo y maximizar el retorno de inversión.",
+    }
+  }

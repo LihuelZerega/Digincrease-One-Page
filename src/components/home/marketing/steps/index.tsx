@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import PulsatingButton from "@/components/magicui/pulsating-button";
+import { LanguageContext } from "@/contexts/LanguageContext";
+import { MarketingTranslations } from "@/lib/translations";
 
 function index() {
+  const { language } = useContext(LanguageContext);
+  const t = MarketingTranslations[language];
+
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="">
-        <div className="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
+        <div className="max-w-7xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
           <div className="max-w-3xl mb-10 lg:mb-14">
             <h2 className="font-bold text-2xl md:text-4xl bg-clip-text bg-gradient-to-l from-lime-600 to-lime-500 text-transparent">
               Marketing
             </h2>
-            <p className="mt-1 text-neutral-400">
-              Es un servicio crucial debido a su capacidad para conectar a las
-              empresas con su audiencia de manera efectiva y eficiente en un
-              mundo cada vez más digitalizado.
-            </p>
+            <p className="mt-1 text-neutral-400">{t.description}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
@@ -29,7 +30,7 @@ function index() {
             <div>
               <div className="mb-4">
                 <h3 className="text-lime-600 text-xs font-medium uppercase">
-                  Steps
+                  {t.steps}
                 </h3>
               </div>
 
@@ -44,11 +45,8 @@ function index() {
 
                 <div className="grow pt-0.5 pb-8 sm:pb-12">
                   <p className="text-sm lg:text-base text-neutral-400">
-                    <span className="text-dark">
-                      Market Research and Analysis:
-                    </span>
-                    Identify your target audience and understand their needs,
-                    preferences, and behaviors.
+                    <span className="font-medium text-neutral-500">{t.step1Title}{" "}</span>
+                    {t.step1Description}
                   </p>
                 </div>
               </div>
@@ -64,11 +62,8 @@ function index() {
 
                 <div className="grow pt-0.5 pb-8 sm:pb-12">
                   <p className="text-sm lg:text-base text-neutral-400">
-                    <span className="text-dark">
-                      Product Development and Testing:
-                    </span>
-                    Develop digital products or services that address the needs
-                    and preferences of your target audience.
+                    <span className="font-medium text-neutral-500">{t.step2Title}{" "}</span>
+                    {t.step2Description}
                   </p>
                 </div>
               </div>
@@ -84,34 +79,13 @@ function index() {
 
                 <div className="grow pt-0.5 pb-8 sm:pb-12">
                   <p className="text-sm md:text-base text-neutral-400">
-                    <span className="text-dark">Marketing and Promotion:</span>
-                    Develop a comprehensive marketing strategy to promote your
-                    digital products or services.
+                    <span className="font-medium text-neutral-500">{t.step3Title}{" "}</span>
+                    {t.step3Description}
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-x-5 ms-1">
-                <div className="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                  <div className="relative z-10 size-8 flex justify-center items-center">
-                    <span className="flex shrink-0 justify-center items-center size-8 border border-neutral-800 text-lime-600 font-semibold text-xs uppercase rounded-full">
-                      4
-                    </span>
-                  </div>
-                </div>
-
-                <div className="grow pt-0.5 pb-8 sm:pb-12">
-                  <p className="text-sm md:text-base text-neutral-400">
-                    <span className="text-dark">Launch and Optimization:</span>
-                    Launch your digital products or services to the market,
-                    closely monitoring their performance and user feedback.
-                  </p>
-                </div>
-              </div>
-
-              <a
-                href="https://calendly.com/digincrease/asesoria-inicial-gratuita"
-              >
+              <a href="https://calendly.com/digincrease/asesoria-inicial-gratuita">
                 <PulsatingButton>
                   <div className="flex flex-row items-center space-x-2">
                     <svg
