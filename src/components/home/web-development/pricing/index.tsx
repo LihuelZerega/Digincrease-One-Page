@@ -1,14 +1,26 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import axios from "axios";
 import BlurFade from "@/components/magicui/blur-fade";
 import ShineBorder from "@/components/magicui/shine-border";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MessageTranslations } from "@/lib/translations";
 import { WebDevelopmentTranslations } from "@/lib/translations";
+import { url } from "inspector";
+
+interface PriceModel {
+  id: number;
+  name: string;
+  priceUSA: number;
+  priceArgentina: number;
+}
 
 function Index() {
   const { language } = useContext(LanguageContext);
   const translations = MessageTranslations[language];
   const t = WebDevelopmentTranslations[language];
+  const [prices, setPrices] = useState<PriceModel[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   const phoneNumber = "5491133816778";
 
@@ -44,6 +56,34 @@ function Index() {
       "_blank"
     );
   };
+
+  useEffect(() => {
+    const fetchPrices = async () => {
+      try {
+        const response = await axios.get('https://digincrease-api-production.up.railway.app/api/digincrease');
+        setPrices(response.data);
+      } catch (error) {
+        setError('Error al cargar los precios');
+        console.error('There was an error fetching the prices!', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPrices();
+  }, []);
+
+  if (loading) return <div>Cargando...</div>;
+  if (error) return <p>{error}</p>;
+
+  const getPriceByName = (name: string, field: 'priceUSA' | 'priceArgentina') =>
+    prices.find((p) => p.name === name)?.[field] || 0;
+
+  const formatPrice = (price: number) => 
+    new Intl.NumberFormat('es-AR').format(price);
+
+  const url = window.location.href;
+  const priceKey = url.endsWith('/ar') ? 'priceArgentina' : 'priceUSA';
 
   return (
     <div>
@@ -151,7 +191,7 @@ function Index() {
             <h4 className="font-medium text-lg text-gray-800">One Page</h4>
             <span className="mt-5 font-bold text-5xl text-gray-800">
               <span className="font-bold text-2xl">$</span>
-              89
+              {formatPrice(getPriceByName('One Page', priceKey))}
             </span>
             <p className="mt-2 text-sm text-gray-500">{t.onepageDescription}</p>
 
@@ -282,7 +322,7 @@ function Index() {
               </h4>
               <span className="mt-5 font-bold text-5xl text-gray-800">
                 <span className="font-bold text-2xl">$</span>
-                39
+                {formatPrice(getPriceByName('Landing Page', priceKey))}
               </span>
               <p className="mt-2 text-sm text-gray-500">
                 {t.landingpageDescription}
@@ -408,8 +448,8 @@ function Index() {
           >
             <h4 className="font-medium text-lg text-gray-800">E-Commerce</h4>
             <span className="mt-5 font-bold text-5xl text-gray-800">
-              <span className="font-bold text-2xl -me-2">$</span>
-              149
+              <span className="font-bold text-2xl">$</span>
+              {formatPrice(getPriceByName('E-commerce', priceKey))}
             </span>
             <p className="mt-2 text-sm text-gray-500">
               {t.ecommerceDescription}
