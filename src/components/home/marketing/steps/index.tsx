@@ -3,7 +3,7 @@ import PulsatingButton from "@/components/magicui/pulsating-button";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MarketingTranslations } from "@/lib/translations";
 
-function index() {
+function Index() {
   const { language } = useContext(LanguageContext);
   const t = MarketingTranslations[language];
 
@@ -122,4 +122,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
