@@ -1910,13 +1910,13 @@ function Index() {
 
                   <td className="py-5 px-6">
                     <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                      ${priceLandingPage}{t.compareModelsMaintenanceAndSupportPerMonth}
+                      ${priceOnePage}{t.compareModelsMaintenanceAndSupportPerMonth}
                     </p>
                   </td>
 
                   <td className="py-5 px-6">
                     <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                      ${priceEcommercePage}{t.compareModelsMaintenanceAndSupportPerMonth}
+                      ${priceLandingPage}{t.compareModelsMaintenanceAndSupportPerMonth}
                     </p>
                   </td>
 
