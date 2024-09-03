@@ -1905,7 +1905,7 @@ function Index() {
                     className="py-5 ps-6 pe-6 text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                     scope="row"
                   >
-                    {/* ${priceOnePage}{t.compareModelsMaintenanceAndSupportTitle} */}
+                    {t.compareModelsMaintenanceAndSupportTitle}
                   </th>
 
                   <td className="py-5 px-6">
