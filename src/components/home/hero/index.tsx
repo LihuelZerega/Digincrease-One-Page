@@ -98,7 +98,7 @@ function Index() {
                 {t.successfulConsultations}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                + 200
+                + 150
               </dd>
             </BlurFade>
             <BlurFade
@@ -109,7 +109,7 @@ function Index() {
                 {t.satisfiedClients}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                + 200
+                + 35
               </dd>
             </BlurFade>
             <BlurFade
@@ -120,7 +120,7 @@ function Index() {
                 {t.businessPartnerships}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                + 200
+                + 50
               </dd>
             </BlurFade>
           </dl>

@@ -21,6 +21,9 @@ function Index() {
   const [prices, setPrices] = useState<PriceModel[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [priceOnePage, setPriceOnePage] = useState(t.compareModelsMaintenanceAndSupportPerMonth);
+  const [priceLandingPage, setPriceLandingPage] = useState(t.compareModelsMaintenanceAndSupportPerMonth);
+  const [priceEcommercePage, setPriceEcommercePage] = useState(t.compareModelsMaintenanceAndSupportPerMonth);
 
   const phoneNumber = "5491133816778";
 
@@ -56,6 +59,19 @@ function Index() {
       "_blank"
     );
   };
+
+  useEffect(() => {
+    const currentUrl = window.location.pathname;
+    if (currentUrl.endsWith('/ar')) {
+      setPriceOnePage("8.000");
+      setPriceLandingPage("8.000");
+      setPriceEcommercePage("15.000");
+    } else {
+      setPriceOnePage("12");
+      setPriceLandingPage("12");
+      setPriceEcommercePage("15");
+    }
+  }, []);
 
   useEffect(() => {
     const fetchPrices = async () => {
@@ -1889,24 +1905,24 @@ function Index() {
                     className="py-5 ps-6 pe-6 text-sm font-normal text-gray-600 text-start whitespace-nowrap"
                     scope="row"
                   >
-                    {t.compareModelsMaintenanceAndSupportTitle}
+                    ${priceOnePage}{t.compareModelsMaintenanceAndSupportTitle}
                   </th>
 
                   <td className="py-5 px-6">
                     <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                      $0.000{t.compareModelsMaintenanceAndSupportPerMonth}
+                      ${priceLandingPage}{t.compareModelsMaintenanceAndSupportPerMonth}
                     </p>
                   </td>
 
                   <td className="py-5 px-6">
                     <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                      $0.000{t.compareModelsMaintenanceAndSupportPerMonth}
+                      ${priceEcommercePage}{t.compareModelsMaintenanceAndSupportPerMonth}
                     </p>
                   </td>
 
                   <td className="py-5 px-6">
                     <p className="ps-6 pe-6 text-sm font-normal text-gray-600 text-center whitespace-nowrap">
-                      $0.000{t.compareModelsMaintenanceAndSupportPerMonth}
+                    ${priceEcommercePage}{t.compareModelsMaintenanceAndSupportPerMonth}
                     </p>
                   </td>
                 </tr>
