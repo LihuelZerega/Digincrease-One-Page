@@ -1,5 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
+import React from "react";
+// import { useRouter } from "next/navigation";
 import NavBar from "@/components/home/nav";
 import ContactForm from "@/components/contact";
 import Footer from "@/components/home/footer";
@@ -7,7 +8,7 @@ import DotPattern from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 
 function page() {
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   const checkLocation = async () => {

@@ -35,7 +35,7 @@ function index() {
               />
             </svg>
             <span className="relative z-10 italic text-gray-800">
-              I just wanted to say that I'm very happy with my purchase of
+              I just wanted to say that Im very happy with my purchase of
               Preline so far. The documentation is outstanding - clear and
               detailed.
             </span>
