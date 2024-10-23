@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
+import Image from "next/image";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MarketingTranslations } from "@/lib/translations";
+
+import MarketingImage from "@/images/MarketingImage.png";
 
 function Index() {
   const { language } = useContext(LanguageContext);
@@ -20,9 +23,9 @@ function Index() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
             <div className="aspect-w-16 aspect-h-9 lg:aspect-none">
-              <img
+              <Image
                 className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={MarketingImage}
                 alt="Features Image"
               />
             </div>

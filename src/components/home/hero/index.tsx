@@ -27,7 +27,7 @@ function Index() {
               </BlurFade>
 
               <BlurFade inView delay={0.25} className="mt-5 max-w-2xl">
-                <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="block text-balance tracking-tight font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl">
                   {t.subtitle}
                 </h1>
               </BlurFade>
@@ -40,7 +40,7 @@ function Index() {
                 <BlurFade inView delay={0.6}>
                   <a
                     className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
-                    href="#web-development"
+                    href="/web-development"
                   >
                     {t.webDevelopment}
                     <svg
@@ -62,7 +62,7 @@ function Index() {
                 <BlurFade inView delay={0.7}>
                   <a
                     className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-white border border-gray-200 text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                    href="#marketing"
+                    href="/marketing"
                   >
                     {t.marketing}
                     <svg
