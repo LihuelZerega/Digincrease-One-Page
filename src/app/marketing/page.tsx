@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation";
 import NavBar from "@/components/home/nav";
 import HeroSection from "@/components/marketing/hero-section";
 import Services from "@/components/marketing/services";
+import CallToAction from "@/components/marketing/call-to-action";
+import Faq from "@/components/marketing/faq";
 import Footer from "@/components/home/footer";
 
 export default function Home() {
@@ -31,6 +33,8 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <Services />
+      <CallToAction />
+      <Faq />
       <Footer />
     </main>
   );

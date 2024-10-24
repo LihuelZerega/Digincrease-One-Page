@@ -40,14 +40,9 @@ const ReviewCard = ({ img }: { img: StaticImageData | string }) => {
 
 export function MarqueeDemo() {
   return (
-    <div className="relative flex h-[250px] w-full flex-col items-center justify-center overflow-hidden bg-neutral-50">
+    <div className="relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden bg-neutral-50">
       <Marquee className="[--duration:20s] py-6">
         {firstRow.map((review, index) => (
-          <ReviewCard key={index} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse className="[--duration:20s] py-6">
-        {secondRow.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}
       </Marquee>

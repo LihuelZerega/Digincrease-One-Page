@@ -263,9 +263,9 @@ export default function Web() {
                   </li>
                 </ul>
 
-                <div className="flex lg:flex-col items-start md:justify-center space-x-3 md:space-x-0 md:space-y-2 pb-6 md:pb-0">
+                <div className="flex lg:flex-row items-start md:justify-start space-x-3 md:space-y-2 pb-6 md:pb-0">
                   <a
-                    className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
+                    className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                     href="/web-development"
                   >
                     {t.ecommerceButton2}

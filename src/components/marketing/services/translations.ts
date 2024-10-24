@@ -30,6 +30,7 @@ export const MarketingTranslations = {
     VideoAndPodcastEditing: "Video and Podcast Editing",
     VideoAndPodcastEditingDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    AcquireService: "Acquire Service",
   },
   es: {
     HeroTitle: "Impulsá tu negocio con estrategias de marketing efectivas",
@@ -62,5 +63,6 @@ export const MarketingTranslations = {
     VideoAndPodcastEditing: "Edición de Videos y Podcast",
     VideoAndPodcastEditingDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    AcquireService: "Adquirir servicio",
   },
 };

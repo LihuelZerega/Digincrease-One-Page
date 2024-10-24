@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import NavBar from "@/components/home/nav";
+import HeroSection from "@/components/home/web-development/hero-section";
 import Pricing from "@/components/home/web-development/pricing";
 import Projects from "@/components/home/web-development/projects";
 import Faq from "@/components/home/web-development/faq";
@@ -30,6 +31,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <NavBar />
+      <HeroSection />
       <div className="mt-12 lg:mt-24">
         <Pricing />
       </div>
