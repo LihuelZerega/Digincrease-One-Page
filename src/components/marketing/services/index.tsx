@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 
-import FreeAdvice from "@/images/marketing/FreeAdvice.png";
-import BrandingAndRebranding from "@/images/marketing/BrandingAndRebranding.png";
-import AdvertisingManagement from "@/images/marketing/AdvertisingManagement.png";
-import ContentCreationAndDistribution from "@/images/marketing/ContentCreationAndDistribution.png";
-import VideoAndPodcastEditing from "@/images/marketing/VideoAndPodcastEditing.png";
+import FreeAdvice from "@/images/Marketing/FreeAdvice.png";
+import BrandingAndRebranding from "@/images/Marketing/BrandingAndRebranding.png";
+import AdvertisingManagement from "@/images/Marketing/AdvertisingManagement.png";
+import ContentCreationAndDistribution from "@/images/Marketing/ContentCreationAndDistribution.png";
+import VideoAndPodcastEditing from "@/images/Marketing/VideoAndPodcastEditing.png";
 
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MarketingTranslations } from "./translations";
