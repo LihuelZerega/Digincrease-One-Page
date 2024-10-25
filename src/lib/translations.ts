@@ -1,19 +1,17 @@
   export const NavBarTranslations = {
     en: {
       home: "Home",
-      aboutUs: "About Us",
       contactUs: "Contact Us!",
       marketing: "Marketing",
       webDevelopment: "Web Development",
-      knowsUs: "Knows Us",
+      freeAdvise: "Schedule your consultation",
     },
     es: {
       home: "Inicio",
-      aboutUs: "Conócenos",
       contactUs: "¡Contáctanos!",
       marketing: "Marketing",
       webDevelopment: "Desarrollo Web",
-      knowsUs: "Conocenos",
+      freeAdvise: "Agenda tu asesoría",
     },
   };
 

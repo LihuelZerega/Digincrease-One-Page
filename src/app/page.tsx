@@ -52,9 +52,6 @@ export default function Home() {
       <Web />
       <Marketing />
       <Testimonials />
-      {/* <div id="marketing">
-        <Steps />
-      </div> */}
       <div className="text-transparent select-none border-b w-full mx-auto max-w-2xl px-6 lg:px-8 py-0">
         s
       </div>

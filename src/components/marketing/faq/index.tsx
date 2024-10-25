@@ -13,7 +13,10 @@ function Index() {
   };
 
   return (
-    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto w-full">
+    <div
+      id="home-faq"
+      className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto w-full"
+    >
       <div className="grid md:grid-cols-5 gap-10">
         <div className="md:col-span-2">
           <h2 className="text-left text-base/7 font-semibold text-lime-600">
@@ -37,9 +40,9 @@ function Index() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
@@ -52,29 +55,24 @@ function Index() {
           <div className="w-full hs-accordion-group divide-y divide-gray-200">
             {[
               {
-                question: "Can I cancel at anytime?",
-                answer:
-                  "Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.",
+                question: t.faqQuestion1,
+                answer: t.faqAnswer1,
               },
               {
-                question: "My team has credits. How do we use them?",
-                answer:
-                  "Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details.",
+                question: t.faqQuestion4,
+                answer: t.faqAnswer4,
               },
               {
-                question: "How does Preline's pricing work?",
-                answer:
-                  "Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key.",
+                question: t.faqQuestion3,
+                answer: t.faqAnswer3,
               },
               {
-                question: "How secure is Preline?",
-                answer:
-                  "Protecting the data you trust to Preline is our first priority. This part is really crucial in keeping the project in line to completion.",
+                question: t.faqQuestion2,
+                answer: t.faqAnswer2,
               },
               {
-                question: "How do I get access to a theme I purchased?",
-                answer:
-                  "If you lose the link for a theme you purchased, don't panic! We've got you covered.",
+                question: t.faqQuestion5,
+                answer: t.faqAnswer5,
               },
             ].map((item, index) => (
               <div

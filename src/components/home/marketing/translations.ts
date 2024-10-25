@@ -5,11 +5,11 @@ export const MarketingTranslations = {
 
     FreePersonalizedConsultingTitle: "Free Personalized Consulting",
     FreePersonalizedConsultingDescription:
-      "During the consultation, we analyze your situation, brand and environment, and create a SWOT matrix to guide your strategy.",
+      "During the consultation, we will analyze your situation regarding web development, visual identity, marketing strategy and audiovisual content.",
 
     BrandingAndRebrandingTitle: "Branding and Rebranding",
     BrandingAndRebrandingDescription:
-      "We create your brand identity by developing the elements that help differentiate it from its competitors.",
+      "We create or adapt your business identity by developing the elements that help people connect with your brand.",
 
     AdvertisingManagementTitle: "Advertising Management",
     AdvertisingManagementDescription:
@@ -17,7 +17,7 @@ export const MarketingTranslations = {
 
     ContentCreationAndDistributionTitle: "Content Creation and Distribution",
     ContentCreationAndDistributionDescription:
-      "We generate attractive content and distribute it strategically on the platforms correct to increase your reach.",
+      "We generate attractive content and distribute it strategically in the right platforms to increase your reach.",
 
     VideoAndPodcastEditing: "Video and Podcast Editing",
     VideoAndPodcastEditingDescription:
@@ -29,11 +29,11 @@ export const MarketingTranslations = {
 
     FreePersonalizedConsultingTitle: "Asesoría Gratuita Personalizada",
     FreePersonalizedConsultingDescription:
-      "Durante la asesoría, analizamos tu situación, marca y entorno, y creamos una matriz FODA para guiar tu estrategia.",
+      "Durante la asesoría, analizaremos tu situación en cuanto a desarrollo web, identidad visual, estrategia de marketing y contenido audiovisual.",
 
     BrandingAndRebrandingTitle: "Branding y Rebranding",
     BrandingAndRebrandingDescription:
-      "Creamos tu identidad de marca desarrollando los elementos que ayudan a diferenciarla de sus competidores.",
+      "Creamos o adaptamos tu identidad empresarial desarrollando los elementos que ayudan a que la gente conecte con tu marca.",
 
     AdvertisingManagementTitle: "Gestión de Pauta Publicitaria",
     AdvertisingManagementDescription:

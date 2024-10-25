@@ -55,21 +55,23 @@ function Navbar() {
   return (
     <div>
       <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7 lg:py-4 fixed bg-white border-b border-neutral-100">
-        <nav className="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
-          <div className="md:col-span-3 lg:col-span-12 lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-full">
-            <a
-              className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="/"
-            >
-              <Image
-                src={DigincreaseLogo}
-                width={50}
-                height={50}
-                alt="Digincrease Logo"
-              />
-            </a>
+        <nav className="relative max-w-7xl w-full flex flex-wrap basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
+          <div className="lg:grid lg:grid-cols-12 lg:items-center lg:w-full">
+            <div className="grid col-span-4">
+              <a
+                className="rounded-xl text-xl font-semibold focus:outline-none focus:opacity-80"
+                href="/"
+              >
+                <Image
+                  src={DigincreaseLogo}
+                  width={50}
+                  height={50}
+                  alt="Digincrease Logo"
+                />
+              </a>
+            </div>
 
-            <div className="hidden lg:flex flex-row items-center md:gap-x-6 lg:gap-x-12">
+            <div className="hidden lg:flex flex-row col-span-4 items-center justify-center space-x-12">
               <a
                 className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
                 href="/"
@@ -88,17 +90,20 @@ function Navbar() {
               >
                 {t.webDevelopment}
               </a>
-              {/* <a
-                className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
-                href="/knows-us"
-              >
-                {t.knowsUs}
-              </a> */}
+            </div>
+
+            <div className="hidden lg:flex flex-row col-span-4 items-center justify-end space-x-4">
               <a
-                className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
+                className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border bg-white text-gray-600 hover:bg-gray-100 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                 href="/contact"
               >
                 {t.contactUs}
+              </a>
+              <a
+                className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
+                href="https://cal.com/digincrease"
+              >
+                {t.freeAdvise}
               </a>
             </div>
           </div>
@@ -194,18 +199,18 @@ function Navbar() {
                   {t.webDevelopment}
                 </a>
               </motion.div>
-              {/* <motion.div
+              <motion.div
                 variants={itemVariants}
                 initial="hidden"
                 animate={isOpen ? "visible" : "hidden"}
               >
                 <a
                   className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
-                  href="/knows-us"
+                  href="https://cal.com/digincrease"
                 >
-                  {t.knowsUs}
+                  {t.freeAdvise}
                 </a>
-              </motion.div> */}
+              </motion.div>
               <motion.div
                 variants={itemVariants}
                 initial="hidden"

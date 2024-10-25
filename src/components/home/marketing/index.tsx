@@ -14,7 +14,7 @@ function Index() {
   const t = MarketingTranslations[language];
 
   return (
-    <div className="bg-neutral-50 py-24 sm:py-32">
+    <div id="home-marketing" className="bg-neutral-50 py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center lg:text-left text-base/7 font-semibold text-lime-600">
           Marketing

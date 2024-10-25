@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-// import { useRouter } from "next/navigation";
 import NavBar from "@/components/home/nav";
 import ContactForm from "@/components/contact";
 import Footer from "@/components/home/footer";
@@ -8,25 +7,6 @@ import DotPattern from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 
 function page() {
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   const checkLocation = async () => {
-  //     try {
-  //       const response = await fetch("https://ipapi.co/json/");
-  //       const data = await response.json();
-
-  //       if (data.country_code === "AR") {
-  //         router.push("/ar/contacto");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching location:", error);
-  //     }
-  //   };
-
-  //   checkLocation();
-  // }, [router]);
-
   return (
     <div className="flex min-h-screen flex-col">
       <NavBar />

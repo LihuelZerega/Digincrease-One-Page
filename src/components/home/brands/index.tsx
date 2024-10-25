@@ -1,32 +1,50 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
-import PiletasRamiroLogo from "@/images/CenterCarLogo.png";
 import Image, { StaticImageData } from "next/image";
+
+import PiletasRamiroLogo from "@/images/PiletasRamiroLogoNegative.png";
+import CenterCarLogo from "@/images/CenterCarLogo.png";
+import InterbussinexLogo from "@/images/InterbussinexLogo.png";
+import LullaxLogo from "@/images/LullaxLogoX.png";
+import RosemenLogo from "@/images/RosemenLogo.png";
+import PrestigeRelojesLogo from "@/images/PrestigeRelojesLogo.png";
+import OmegaVisionLogo from "@/images/OmegaVisionLogo.png";
+import NfArqLogo from "@/images/NfArqLogo.png";
+import StudioCahLogo from "@/images/StudioCahLogo.png";
 
 const reviews = [
   {
     img: PiletasRamiroLogo,
   },
   {
-    img: PiletasRamiroLogo,
+    img: CenterCarLogo,
   },
   {
-    img: PiletasRamiroLogo,
+    img: InterbussinexLogo,
   },
   {
-    img: PiletasRamiroLogo,
+    img: LullaxLogo,
   },
   {
-    img: PiletasRamiroLogo,
+    img: RosemenLogo,
   },
   {
-    img: PiletasRamiroLogo,
+    img: PrestigeRelojesLogo,
   },
+  {
+    img: OmegaVisionLogo,
+  },
+  {
+    img: NfArqLogo,
+  },
+  {
+    img: StudioCahLogo,
+  },
+
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length);
 
 const ReviewCard = ({ img }: { img: StaticImageData | string }) => {
   return (
@@ -41,7 +59,7 @@ const ReviewCard = ({ img }: { img: StaticImageData | string }) => {
 export function MarqueeDemo() {
   return (
     <div className="relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden bg-neutral-50">
-      <Marquee className="[--duration:20s] py-6">
+      <Marquee className="[--duration:40s] py-6">
         {firstRow.map((review, index) => (
           <ReviewCard key={index} {...review} />
         ))}

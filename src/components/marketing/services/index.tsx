@@ -19,7 +19,7 @@ function Index() {
       id="marketing-services"
       className="flex flex-col items-center justify-center mx-auto"
     >
-      <div className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
+      <div id="free-personalized-consulting" className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
@@ -35,10 +35,10 @@ function Index() {
                 </p>
 
                 <a
-                  className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
-                  href="/contact"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
+                  href="https://cal.com/digincrease"
                 >
-                  {t.AcquireService}
+                  {t.ScheduleAmeeting}
                   <svg
                     className="shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,9 +47,9 @@ function Index() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -69,7 +69,7 @@ function Index() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
+      <div id="branding-and-rebranding" className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="hidden lg:block relative">
             <Image
@@ -91,7 +91,7 @@ function Index() {
                 <p className="text-gray-500">{t.BrandingAndRebrandingText2}</p>
                 <p className="text-gray-500">{t.BrandingAndRebrandingText3}</p>
                 <a
-                  className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                   href="/contact"
                 >
                   {t.AcquireService}
@@ -103,9 +103,9 @@ function Index() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -125,7 +125,7 @@ function Index() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
+      <div id="advertising-management" className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
@@ -134,10 +134,16 @@ function Index() {
                   {t.AdvertisingManagementTitle}
                 </h2>
                 <p className="text-gray-500">
-                  {t.AdvertisingManagementDescription}
+                  {t.AdvertisingManagementText1}
+                </p>
+                <p className="text-gray-500">
+                  {t.AdvertisingManagementText2}
+                </p>
+                <p className="text-gray-500">
+                  {t.AdvertisingManagementText3}
                 </p>
                 <a
-                  className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                   href="/contact"
                 >
                   {t.AcquireService}
@@ -149,9 +155,9 @@ function Index() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -171,7 +177,7 @@ function Index() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
+      <div id="content-creation-and-distribution" className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="hidden lg:block relative">
             <Image
@@ -190,11 +196,14 @@ function Index() {
                   {t.ContentCreationAndDistributionTitle}
                 </h2>
                 <p className="text-gray-500">
-                  {t.ContentCreationAndDistributionDescription}
+                  {t.ContentCreationAndDistributionText1}
+                </p>
+                <p className="text-gray-500">
+                  {t.ContentCreationAndDistributionText2}
                 </p>
 
                 <a
-                  className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                   href="/contact"
                 >
                   {t.AcquireService}
@@ -206,9 +215,9 @@ function Index() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -228,7 +237,7 @@ function Index() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
+      <div id="video-and-podcast-editing" className="mx-auto max-w-2xl py-12 px-6 lg:max-w-7xl lg:px-8">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
@@ -237,11 +246,17 @@ function Index() {
                   {t.VideoAndPodcastEditing}
                 </h2>
                 <p className="text-gray-500">
-                  {t.VideoAndPodcastEditingDescription}
+                  {t.VideoAndPodcastEditingText1}
+                </p>
+                <p className="text-gray-500">
+                  {t.VideoAndPodcastEditingText2}
+                </p>
+                <p className="text-gray-500">
+                  {t.VideoAndPodcastEditingText3}
                 </p>
 
                 <a
-                  className="group inline-flex items-center gap-x-2 font-medium text-sm lg:text-base text-lime-600 hover:text-lime-500 decoration-2 hover:underline focus:outline-none focus:underline"
+                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-md border border-transparent bg-lime-500 text-white hover:bg-lime-600 focus:outline-none focus:bg-lime-500 transition disabled:opacity-50 disabled:pointer-events-none"
                   href="/contact"
                 >
                   {t.AcquireService}
@@ -253,9 +268,9 @@ function Index() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />

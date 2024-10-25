@@ -4,11 +4,11 @@ export const OurServicesTranslations = {
     subtitle: "Increase your digital presence with our tailored services",
     asesoriaTitle: "Free advice",
     asesoriaText:
-      "We will analyze your company from all the aspects that our agency offers.",
+      "We analyze your company from all the aspects we offer so that you know what situation it is in.",
     asesoriaButton: "I want to request advice",
     marketingTitle: "Marketing",
     marketingText:
-      "We provide tools to increase your online visibility and reach specific audiences.",
+      "We provide tools to increase your online visibility and reach specific audiences around the world.",
     marketingButton: "More information",
     desarrolloWebTitle: "Web Development",
     desarrolloWebText:
@@ -19,11 +19,11 @@ export const OurServicesTranslations = {
     subtitle: "Elevá tu presencia digital con nuestros servicios a tu medida",
     asesoriaTitle: "Asesoría gratuita",
     asesoriaText:
-      "Analizaremos tu empresa desde todos los aspectos que ofrece nuestra agencia.",
+      "Analizamos tu empresa desde todos los aspectos que ofrecemos para que sepas en que situación se encuentra.",
     asesoriaButton: "Quiero solicitar asesoría",
     marketingTitle: "Marketing",
     marketingText:
-      "Brindamos herramientas para aumentar su visibilidad en línea y llegar a audiencias específicas.",
+      "Brindamos herramientas para aumentar su visibilidad en línea y llegar a audiencias específicas de todo el mundo.",
     marketingButton: "Mas información",
     desarrolloWebTitle: "Desarrollo Web",
     desarrolloWebText:
