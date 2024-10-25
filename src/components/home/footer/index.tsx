@@ -5,7 +5,7 @@ import { FooterTranslations } from "./translations";
 import Image from "next/image";
 import DigincreaseLogo from "@/images/digincrease-logo.png";
 
-function index() {
+function Index() {
   const { language } = useContext(LanguageContext);
   const t = FooterTranslations[language];
 
@@ -232,4 +232,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
