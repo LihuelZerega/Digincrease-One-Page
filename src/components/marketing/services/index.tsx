@@ -281,11 +281,20 @@ function Index() {
           </div>
 
           <div className="relative">
-            <Image
-              src={VideoAndPodcastEditing}
-              alt="VideoAndPodcastEditing"
-              className="object-cover rounded-xl"
-            />
+          <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="inset-0 w-full object-cover object-center z-0"
+                    preload="auto"
+                  >
+                    <source
+                      src="https://res.cloudinary.com/dvey7yw5h/video/upload/v1730239753/VideoAndPodcastEditing_iwd9ao.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
           </div>
         </div>
       </div>

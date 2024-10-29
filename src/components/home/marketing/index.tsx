@@ -24,7 +24,10 @@ function Index() {
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-rows-2 relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <a href="#" className="relative">
+            <a
+              href="/marketing#free-personalized-consulting"
+              className="relative"
+            >
               <div className="absolute inset-px rounded-lg bg-white hover:shadow-md transition-shadow duration-500"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -46,7 +49,10 @@ function Index() {
               <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
             </a>
 
-            <a href="#" className="relative hover:shadow-md">
+            <a
+              href="/marketing#branding-and-rebranding"
+              className="relative hover:shadow-md"
+            >
               <div className="absolute inset-px rounded-lg bg-white hover:shadow-md transition-shadow duration-500"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -70,7 +76,10 @@ function Index() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <a href="#" className="relative hover:shadow-md">
+            <a
+              href="/marketing#advertising-management"
+              className="relative hover:shadow-md"
+            >
               <div className="absolute inset-px rounded-lg bg-white hover:shadow-md transition-shadow duration-500"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -92,7 +101,10 @@ function Index() {
               <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
             </a>
 
-            <a href="#" className="relative hover:shadow-md">
+            <a
+              href="/marketing#video-and-podcast-editing"
+              className="relative hover:shadow-md"
+            >
               <div className="absolute inset-px rounded-lg bg-white hover:shadow-md transition-shadow duration-500"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -104,17 +116,29 @@ function Index() {
                   </p>
                 </div>
                 <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                  <Image
-                    className="h-[250px] object-cover object-center"
-                    src={VideoAndPodcastEditing}
-                    alt=""
-                  />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="inset-0 w-full h-[250px] object-cover object-center z-0"
+                    preload="auto"
+                  >
+                    <source
+                      src="https://res.cloudinary.com/dvey7yw5h/video/upload/v1730239753/VideoAndPodcastEditing_iwd9ao.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
             </a>
 
-            <a href="#" className="relative hover:shadow-md">
+            <a
+              href="/marketing#content-creation-and-distribution"
+              className="relative hover:shadow-md"
+            >
               <div className="absolute inset-px rounded-lg bg-white hover:shadow-md transition-shadow duration-500"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
