@@ -260,6 +260,7 @@ function Index() {
                     <option value="Espana">España</option>
                     <option value="Chile">Chile</option>
                     <option value="Colombia">Colombia</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
 
@@ -694,7 +695,7 @@ function Index() {
                 <p className="mt-1 text-sm text-gray-500">{t.dataFaqText}</p>
                 <a
                   className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-lime-600 hover:text-lime-500 focus:outline-none focus:text-gray-800"
-                  href="#"
+                  href="/#home-faq"
                 >
                   {t.dataFaqLink}
                   <svg
