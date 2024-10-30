@@ -8,6 +8,7 @@ import Image from "next/image";
 import PiletasRamiroLogo from "@/images/ProjectsImages/PiletasRamiroLogo.png";
 import PiletasRamiroImage from "@/images/ProjectsImages/PiletasRamiroImage.png";
 import InterbusinexLogo from "@/images/ProjectsImages/InterbusinexLogo.png";
+import InterbusinexImage from "@/images/ProjectsImages/InterbusinexImage.png";
 import PrestigeRelojesLogo from "@/images/ProjectsImages/PrestigeRelojesLogo.png";
 import PrestigeRelojesImage from "@/images/ProjectsImages/PrestigeRelojesImage.png";
 
@@ -24,7 +25,10 @@ function Index() {
           </div>
 
           <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
-            <a href="https://piletasramiro.com.ar" className="hidden lg:block lg:col-span-3">
+            <a
+              href="https://piletasramiro.com.ar"
+              className="hidden lg:block lg:col-span-3"
+            >
               <div className="relative overflow-hidden rounded-lg group">
                 <Image
                   className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50 border rounded-lg border-neutral-200"
@@ -100,15 +104,13 @@ function Index() {
                 </div>
 
                 <footer className="mt-6">
-                  <div className="flex items-center">
-                    <a href="#" className="lg:hidden shrink-0">
+                  <div className="flex flex-col lg:flex-row lg:items-center">
+                    <a href="https://piletasramiro.com.ar" className="lg:hidden shrink-0">
                       <div className="relative overflow-hidden rounded-xl group">
-                        <motion.img
+                        <Image
                           className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50"
-                          src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                          src={PiletasRamiroImage}
                           alt="Avatar"
-                          initial={{ opacity: 1 }}
-                          whileHover={{ opacity: 0.5 }}
                         />
 
                         <motion.div
@@ -144,7 +146,7 @@ function Index() {
                         </motion.div>
                       </div>
                     </a>
-                    <div className="ms-4 lg:ms-0">
+                    <div className="mt-3 lg:mt-0">
                       <p className="font-medium text-gray-800">
                         Piletas Ramiro
                       </p>
@@ -201,16 +203,14 @@ function Index() {
                 </div>
 
                 <footer className="mt-6">
-                  <div className="flex items-center">
+                  <div className="flex flex-col lg:flex-row lg:items-center">
                     <div className="lg:hidden shrink-0">
-                      <a href="#" className="lg:hidden shrink-0">
+                      <a href="https://www.interbusinex.com/" className="lg:hidden shrink-0">
                         <div className="relative overflow-hidden rounded-xl group">
-                          <motion.img
-                            className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50"
-                            src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                          <Image
+                            className="w-fit h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50 border rounded-lg border-neutral-200"
+                            src={InterbusinexImage}
                             alt="Avatar"
-                            initial={{ opacity: 1 }}
-                            whileHover={{ opacity: 0.5 }}
                           />
 
                           <motion.div
@@ -247,7 +247,7 @@ function Index() {
                         </div>
                       </a>
                     </div>
-                    <div className="ms-4 lg:ms-0">
+                    <div>
                       <p className="font-medium text-gray-800">Interbusinex</p>
                       <p className="text-sm text-gray-600">
                         {t.InterbusinexTeam}
@@ -258,14 +258,12 @@ function Index() {
               </blockquote>
             </div>
 
-            <a href="#" className="hidden lg:block lg:col-span-3">
+            <a href="https://www.interbusinex.com/" className="hidden lg:block lg:col-span-3">
               <div className="relative overflow-hidden rounded-xl group">
-                <motion.img
-                  className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50"
-                  src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              <Image
+                  className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50 border rounded-lg border-neutral-200"
+                  src={InterbusinexImage}
                   alt="Avatar"
-                  initial={{ opacity: 1 }}
-                  whileHover={{ opacity: 0.5 }}
                 />
 
                 <motion.div
@@ -314,7 +312,7 @@ function Index() {
           <div className="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
             <a href="#" className="hidden lg:block lg:col-span-3">
               <div className="relative overflow-hidden rounded-xl group">
-              <Image
+                <Image
                   className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50 border rounded-lg border-neutral-200"
                   src={PrestigeRelojesImage}
                   alt="Avatar"
@@ -388,15 +386,13 @@ function Index() {
                 </div>
 
                 <footer className="mt-6">
-                  <div className="flex items-center">
+                  <div className="flex flex-col lg:flex-row lg:items-center">
                     <a href="#" className="lg:hidden shrink-0">
                       <div className="relative overflow-hidden rounded-xl group">
-                        <motion.img
-                          className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50"
-                          src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                        <Image
+                          className="w-fit h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-50"
+                          src={PrestigeRelojesImage}
                           alt="Avatar"
-                          initial={{ opacity: 1 }}
-                          whileHover={{ opacity: 0.5 }}
                         />
 
                         <motion.div
@@ -432,7 +428,7 @@ function Index() {
                         </motion.div>
                       </div>
                     </a>
-                    <div className="ms-4 lg:ms-0">
+                    <div className="mt-3 lg:mt-0">
                       <p className="font-medium text-gray-800">
                         Prestige Relojes
                       </p>

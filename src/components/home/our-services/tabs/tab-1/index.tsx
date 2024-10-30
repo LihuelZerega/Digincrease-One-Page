@@ -9,7 +9,7 @@
 	  })();
 	}, [])
 	return <Cal namespace="30min"
-	  calLink="digincrease/30min"
+	  calLink="digincrease/asesoria-gratuita-inicial"
 	  style={{width:"100%",height:"100%",overflow:"scroll"}}
 	  config={{"layout":"month_view","theme":"light"}}
     
