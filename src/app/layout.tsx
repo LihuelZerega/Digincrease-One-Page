@@ -17,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16628874079"
+      ></script>
       <body className={inter.className}>
-        <ClientProvider>
-          {children}
-        </ClientProvider>
+        <ClientProvider>{children}</ClientProvider>
       </body>
     </html>
   );
