@@ -31,13 +31,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         src="https://www.googletagmanager.com/gtag/js?id=AW-16628874079"
       ></script>
       <noscript>
-        <iframe 
+        <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-KFFXCSPV"
-          height="0" 
-          width="0" 
-          style={{display: "none", visibility: "hidden"}}
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-RNLQH173BJ"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RNLQH173BJ');
+    `,
+        }}
+      />
       <body className={inter.className}>
         <ClientProvider>{children}</ClientProvider>
       </body>
