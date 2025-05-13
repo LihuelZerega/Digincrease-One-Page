@@ -205,9 +205,6 @@ function Index() {
                 digincrease@gmail.com
               </p>
               <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                +54 9 11 3481-9602
-              </p>
-              <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 +34 624 35 44 76
               </p>
               <p>
