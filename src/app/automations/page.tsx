@@ -1,6 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import NavBar from "@/components/home/nav";
 import HeroSection from "@/components/automations/hero-section";
 import SuccessStories from "@/components/automations/success-stories";
