@@ -57,7 +57,7 @@ function Navbar() {
       <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7 lg:py-4 fixed bg-white border-b border-neutral-100">
         <nav className="relative max-w-7xl w-full flex flex-wrap basis-full items-center px-4 md:px-6 lg:px-8 mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center lg:w-full">
-            <div className="grid col-span-4">
+            <div className="grid col-span-2">
               <a
                 className="rounded-xl text-xl font-semibold focus:outline-none focus:opacity-80"
                 href="/"
@@ -71,7 +71,7 @@ function Navbar() {
               </a>
             </div>
 
-            <div className="hidden lg:flex flex-row col-span-4 items-center justify-center space-x-12">
+            <div className="hidden lg:flex flex-row col-span-6 items-center justify-center space-x-12">
               <a
                 className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
                 href="/"
@@ -89,6 +89,12 @@ function Navbar() {
                 href="/web-development"
               >
                 {t.webDevelopment}
+              </a>
+              <a
+                className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
+                href="/automations"
+              >
+                {t.automations}
               </a>
             </div>
 
@@ -197,6 +203,18 @@ function Navbar() {
                   href="/web-development"
                 >
                   {t.webDevelopment}
+                </a>
+              </motion.div>
+              <motion.div
+                variants={itemVariants}
+                initial="hidden"
+                animate={isOpen ? "visible" : "hidden"}
+              >
+                <a
+                  className="inline-block font-medium text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 hover:underline hover:underline-offset-4 decoration-2 decoration-lime-400 hover:underline-lime-400 transition-all duration-200"
+                  href="/automations"
+                >
+                  {t.automations}
                 </a>
               </motion.div>
               <motion.div

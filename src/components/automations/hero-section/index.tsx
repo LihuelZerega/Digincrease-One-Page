@@ -26,7 +26,7 @@ export default function HeroSection() {
     <>
       <main className="overflow-hidden">
         <section className="bg-neutral-50 relative">
-          <div className="relative py-12 lg:pt-40">
+          <div className="relative py-12 pt-28 lg:pt-40">
             <div className="mx-auto px-6 max-w-7xl md:px-12">
               <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5 mb-8">
                 <h1 className="mt-8 text-title text-4xl md:text-5xl lg:text-6xl block text-balance tracking-tight font-semibold text-gray-800">

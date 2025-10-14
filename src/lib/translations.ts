@@ -4,6 +4,7 @@
       contactUs: "Contact Us!",
       marketing: "Marketing",
       webDevelopment: "Web Development",
+      automations: "Automations",
       freeAdvise: "Schedule your consultation",
     },
     es: {
@@ -11,6 +12,7 @@
       contactUs: "¡Contáctanos!",
       marketing: "Marketing",
       webDevelopment: "Desarrollo Web",
+      automations: "Automatizaciones",
       freeAdvise: "Agenda tu asesoría",
     },
   };
