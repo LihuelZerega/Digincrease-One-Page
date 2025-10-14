@@ -28,7 +28,7 @@ function Index() {
               />
             </a>
             <p className="mt-3 text-xs sm:text-sm text-gray-600">
-              © 2024 Digincrease.
+              © 2025 Digincrease.
             </p>
           </div>
 
@@ -221,7 +221,7 @@ function Index() {
 
         <footer className="mt-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto border-t border-neutral-100">
             <p className="text-gray-500 text-center mt-12">
-              © Digincrease 2024. Todos los derechos reservados.
+              © Digincrease 2025. Todos los derechos reservados.
             </p>
         </footer>
       </footer>
