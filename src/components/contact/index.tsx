@@ -237,6 +237,9 @@ function Index() {
                     <option value="Desarrollo E-commerce">
                       {t.formDesiredService4}
                     </option>
+                    <option value="Automatizaciones/Inteligencia Artificial">
+                      Automatizaciones/Inteligencia Artificial
+                    </option>
                     {/* <option value="seo">{t.formDesiredService6}</option> */}
                   </select>
                 </div>
@@ -452,7 +455,7 @@ function Index() {
                             6. {t.privacyPolicyTitle6}
                           </h3>
                           <p className="text-sm md:text-base text-gray-600">
-                          {t.privacyPolicyDescription6}:
+                            {t.privacyPolicyDescription6}:
                           </p>
                           <ul className="mt-2 text-sm text-gray-600 space-y-1">
                             <li>
@@ -466,7 +469,7 @@ function Index() {
                             </li>
                             <li>
                               <strong>
-                              {t.privacyPolicy6TextTitle4}:
+                                {t.privacyPolicy6TextTitle4}:
                               </strong>{" "}
                               {t.privacyPolicy6Text4}
                             </li>
@@ -475,7 +478,7 @@ function Index() {
                             </li>
                           </ul>
                           <p className="text-sm md:text-base text-gray-600 mt-2">
-                          {t.privacyPolicyText6}
+                            {t.privacyPolicyText6}
                           </p>
                         </div>
 
@@ -484,7 +487,7 @@ function Index() {
                             7. {t.privacyPolicyTitle7}
                           </h3>
                           <p className="text-sm md:text-base text-gray-600">
-                          {t.privacyPolicyDescription7}
+                            {t.privacyPolicyDescription7}
                           </p>
                         </div>
 
@@ -493,7 +496,7 @@ function Index() {
                             8. {t.privacyPolicyTitle8}
                           </h3>
                           <p className="text-sm md:text-base text-gray-600">
-                          {t.privacyPolicyDescription8}
+                            {t.privacyPolicyDescription8}
                           </p>
                         </div>
                       </div>
@@ -606,7 +609,7 @@ function Index() {
                   className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-lime-600 hover:text-lime-500 focus:outline-none focus:text-gray-800"
                   href="#"
                 >
-                  digincrease@gmail.com
+                  contacto@digincrease.com.ar
                 </a>
               </div>
             </div>

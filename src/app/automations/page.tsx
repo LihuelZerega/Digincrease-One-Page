@@ -1,6 +1,7 @@
 "use client";
 import NavBar from "@/components/home/nav";
 import HeroSection from "@/components/automations/hero-section";
+import Pricing from "@/components/automations/pricing";
 import SuccessStories from "@/components/automations/success-stories";
 import CallToAction from "@/components/automations/call-to-action";
 import Faq from "@/components/automations/faq";
@@ -11,6 +12,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col">
       <NavBar />
       <HeroSection />
+      <Pricing />
       <SuccessStories />
       <CallToAction />
       <Faq />

@@ -8,6 +8,8 @@ import Inmobiliaria from "@/images/Inmobiliaria.jpeg";
 
 import { LanguageContext } from "@/contexts/LanguageContext";
 import { MarketingTranslations } from "./translations";
+import { Highlighter } from "@/components/ui/highlighter";
+import { FileDown, Bot, MessageCircleQuestion, Calendar, CalendarClock, MessageCircleMore, Flame, MapPinHouse, PersonStanding, ArrowRight } from 'lucide-react';
 
 function Index() {
   const { language } = useContext(LanguageContext);
@@ -21,22 +23,31 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-semibold text-balance tracking-tight text-neutral-800 text-4xl sm:text-5xl">
-                  Clínica odontológica
+                  AmericanSeg Brokers
                 </h2>
-                <p className="text-gray-500">
-                Automatizá la gestión de turnos y mejorá la experiencia de tus pacientes.
+                <p className="text-gray-500">Antes, gran parte del tiempo del equipo se iba en responder consultas repetitivas: envío de pólizas, solicitudes de asistencia, dudas básicas de clientes.
                 </p>
-                <p className="text-gray-500">El bot permite reservar, modificar o cancelar citas en segundos, enviar recordatorios automáticos y responder preguntas frecuentes sobre tratamientos o coberturas.</p>
-                <p className="text-gray-500">Un asistente que trabaja todos los días para mantener tu agenda siempre organizada.</p>
+                <p className="text-gray-500">Hoy, eso cambió.</p>
+                <p className="text-gray-500">Implementaron <Highlighter action="underline" color="#82C915">“Brokie”</Highlighter> un asistente digital que centraliza la atención y permite a los asegurados:</p>
+                <ul className="text-gray-500 space-y-2">
+                  <li className="flex items-center gap-1"><span><FileDown className="text-lime-600" size={18} /></span> Descargar sus pólizas en segundos</li>
+                  <li className="flex items-center gap-1"><span><Bot className="text-lime-600" size={18} /></span> Solicitar asistencia 24/7 sin intermediarios</li>
+                  <li className="flex items-center gap-1"><span><MessageCircleQuestion className="text-lime-600" size={18} /></span> Realizar consultas frecuentes sin demoras</li>
+                </ul>
+                <p className="text-gray-500">El resultado: Un servicio más ágil, disponible 24/7 y un equipo liberado para enfocarse en tareas de mayor valor, como la retención y venta de nuevos seguros.</p>
               </div>
             </div>
+            <a href="/contact" className="mt-5 w-full lg:w-auto py-4 px-6 rounded-xl bg-lime-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-lime-600 transition-all border-b-4 border-lime-700 active:border-b-0 active:translate-y-[2px] shadow-lg">
+              Quiero implementar un asistente en mi negocio
+              <ArrowRight className="w-4 h-4 shadow-sm" />
+            </a>
           </div>
 
           <div className="relative">
             <Image
-              src={Odontologia}
-              alt="Features Image"
-              className="object-cover rounded-xl"
+              src={BrokerSeguros}
+              alt="BrokerSeguros"
+              className="object-cover rounded-xl mt-5 lg:mt-0"
             />
           </div>
         </div>
@@ -46,8 +57,8 @@ function Index() {
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div className="hidden lg:block relative">
             <Image
-              src={Inmobiliaria}
-              alt="Features Image"
+              src={Odontologia}
+              alt="Odontologia"
               className="object-cover rounded-xl"
             />
           </div>
@@ -56,20 +67,32 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-semibold text-balance tracking-tight text-neutral-800 text-4xl sm:text-5xl">
-                  Inmobiliaria
+                  Centro Dental NovaCare
                 </h2>
-                <p className="text-gray-500">Atendé a tus clientes en segundos.</p>
-                <p className="text-gray-500">Este asistente automatizado responde consultas sobre propiedades disponibles, envía fichas técnicas con fotos, precios y ubicaciones, y permite agendar visitas de manera inmediata.</p>
-                <p className="text-gray-500">Optimiza tu tiempo, mejora la atención y asegurá más cierres con un sistema disponible las 24 horas.</p>
+                <p className="text-gray-500">
+                  La gestión manual de turnos generaba errores, cancelaciones de último momento y tiempo perdido en llamadas.
+                </p>
+                <p className="text-gray-500">Para resolverlo, implementaron un chatbot inteligente que automatiza toda la agenda del consultorio:</p>
+                <ul className="text-gray-500 space-y-2">
+                  <li className="flex items-center gap-1"><span><Calendar className="text-lime-600" size={18} /></span> Reserva, modificación y cancelación de turnos en segundos</li>
+                  <li className="flex items-center gap-1"><span><CalendarClock className="text-lime-600" size={18} /></span> Recordatorios automáticos que reducen ausencias</li>
+                  <li className="flex items-center gap-1"><span><MessageCircleMore className="text-lime-600" size={18} /></span> Respuestas inmediatas sobre tratamientos, precios y coberturas</li>
+                </ul>
+                <p className="text-gray-500">El resultado: Una agenda siempre organizada, menos turnos perdidos y una experiencia mucho más cómoda para los pacientes.</p>
+                <p className="text-gray-500">Un asistente que trabaja todos los días, incluso cuando el consultorio está cerrado.</p>
               </div>
             </div>
+            <a href="/contact" className="mt-5 w-full lg:w-auto py-4 px-6 rounded-xl bg-lime-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-lime-600 transition-all border-b-4 border-lime-700 active:border-b-0 active:translate-y-[2px] shadow-lg">
+              Quiero implementar un asistente en mi negocio
+              <ArrowRight className="w-4 h-4 shadow-sm" />
+            </a>
           </div>
 
           <div className="block lg:hidden relative">
             <Image
-              src={AdvertisingManagement}
-              alt="Features Image"
-              className="object-cover rounded-xl"
+              src={Odontologia}
+              alt="Odontologia"
+              className="object-cover rounded-xl mt-5 lg:mt-0"
             />
           </div>
         </div>
@@ -81,21 +104,31 @@ function Index() {
             <div className="space-y-6 sm:space-y-8">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="font-semibold text-balance tracking-tight text-neutral-800 text-4xl sm:text-5xl">
-                  Broker de seguros
+                  Propiedades del Sur
                 </h2>
-                <p className="text-gray-500">Simplificá la atención a tus asegurados con un asistente digital.
-                </p>
-                <p className="text-gray-500">El bot permite descargar pólizas y solicitar asistencia directamente desde WhatsApp o tu sitio web.</p>
-                <p className="text-gray-500">Una solución ágil, segura y disponible 24/7 para brindar un servicio más eficiente y moderno.</p>
+                <p className="text-gray-500">El problema era claro: los asesores perdían horas hablando con personas que no estaban listas para comprar o alquilar.</p>
+                <p className="text-gray-500">Hoy, eso está filtrado automáticamente. Implementamos un asistente que:</p>
+                <ul className="text-gray-500 space-y-2">
+                  <li className="flex items-center gap-1"><span><MessageCircleMore className="text-lime-600" size={18} /></span>Responde consultas en tiempo real</li>
+                  <li className="flex items-center gap-1"><span><MapPinHouse className="text-lime-600" size={18} /></span>Envía fichas completas de propiedades (fotos, precios, ubicación)</li>
+                  <li className="flex items-center gap-1"><span><Flame className="text-lime-600" size={18} /></span>Califica a cada lead según su nivel de interés</li>
+                  <li className="flex items-center gap-1"><span><PersonStanding className="text-lime-600" size={18} /></span>Agenda visitas solo con potenciales clientes reales</li>
+                </ul>
+                <p className="text-gray-500">El resultado: Los agentes dejan de perder tiempo en “curiosos” y se enfocan únicamente en cerrar operaciones.</p>
+                <p className="text-gray-500">Más eficiencia, mejores conversaciones y más ventas.</p>
               </div>
+              <a href="/contact" className="w-full lg:w-auto py-4 px-6 rounded-xl bg-lime-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-lime-600 transition-all border-b-4 border-lime-700 active:border-b-0 active:translate-y-[2px] shadow-lg">
+                Quiero implementar un asistente en mi negocio
+                <ArrowRight className="w-4 h-4 shadow-sm" />
+              </a>
             </div>
           </div>
 
           <div className="relative">
             <Image
-              src={BrokerSeguros}
-              alt="BrokerSeguros"
-              className="object-cover rounded-xl"
+              src={Inmobiliaria}
+              alt="Inmobiliaria"
+              className="object-cover rounded-xl mt-5 lg:mt-0"
             />
           </div>
         </div>

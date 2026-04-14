@@ -202,7 +202,7 @@ function Index() {
                 </a>
               </p>
               <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                digincrease@gmail.com
+                contacto@digincrease.com.ar
               </p>
               <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 +34 624 35 44 76
@@ -220,9 +220,9 @@ function Index() {
         </div>
 
         <footer className="mt-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto border-t border-neutral-100">
-            <p className="text-gray-500 text-center mt-12">
-              © Digincrease 2025. Todos los derechos reservados.
-            </p>
+          <p className="text-gray-500 text-center mt-12">
+            © Digincrease 2025. Todos los derechos reservados.
+          </p>
         </footer>
       </footer>
     </div>

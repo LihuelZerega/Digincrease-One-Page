@@ -95,8 +95,7 @@ export default function HeroSection() {
                 ¿Tu negocio pierde tiempo y clientes por tareas repetitivas?
               </h2>
               <p className="text-body mt-4">
-                Estos son los problemas más frecuentes que vemos en empresas y
-                que podemos resolver con automatizaciones.
+                Mientras vos perdes tiempo en estas tareas, otros ya están automatizando y vendiendo más con menos esfuerzo.
               </p>
             </div>
             <div className="mt-16 grid gap-6 md:gap-12 *:text-center sm:grid-cols-2 lg:grid-cols-3">
@@ -262,7 +261,7 @@ export default function HeroSection() {
                 Automatizamos tu negocio de punta a punta
               </p>
               <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2">
-                <div className="relative">
+                <div className="relative border border-gray-100 rounded-lg">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                     <div className="p-10">
@@ -298,7 +297,7 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-                <div className="relative">
+                <div className="relative border border-gray-100 rounded-lg">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                     <div className="p-10">
@@ -329,7 +328,7 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-                <div className="relative">
+                <div className="relative border border-gray-100 rounded-lg">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                     <div className="p-10">
@@ -366,7 +365,7 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-                <div className="relative">
+                <div className="relative border border-gray-100 rounded-lg">
                   <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl" />
                   <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                     <div className="p-10">
