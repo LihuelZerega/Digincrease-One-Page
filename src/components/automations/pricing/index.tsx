@@ -90,52 +90,54 @@ const Index = () => {
           {/* Growth Plan (Featured) */}
           <BlurFade delay={0.5} inView className="h-full">
             <ShineBorder
-              className="relative w-full h-full flex flex-col p-8 bg-white border-0 shadow-xl items-stretch overflow-hidden"
+              className="relative w-full h-full flex flex-col bg-white border-0 shadow-xl items-stretch overflow-hidden"
               color={["#82C915", "#A9E34B", "#5C940D"]}
             >
-              <div className="absolute top-4 right-4 bg-lime-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest flex items-center gap-1 shadow-lg">
-                <Star className="w-3 h-3 fill-current" />
-                {t.growth.popular}
-              </div>
-
-              <div className="mb-6 mt-2">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{t.growth.name}</h3>
-                <div className="flex items-baseline gap-1 mb-4">
-                  <span className="text-3xl font-bold text-gray-900">USD</span>
-                  <span className="text-5xl font-extrabold text-lime-600">{t.growth.price}</span>
-                  <span className="text-gray-500">{t.growth.period}</span>
+              <div className="relative z-10 h-full flex flex-col p-8">
+                <div className="absolute top-4 right-4 bg-lime-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest flex items-center gap-1 shadow-lg">
+                  <Star className="w-3 h-3 fill-current" />
+                  {t.growth.popular}
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t.growth.description}
-                </p>
+
+                <div className="mb-6 mt-2">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{t.growth.name}</h3>
+                  <div className="flex items-baseline gap-1 mb-4">
+                    <span className="text-3xl font-bold text-gray-900">USD</span>
+                    <span className="text-5xl font-extrabold text-lime-600">{t.growth.price}</span>
+                    <span className="text-gray-500">{t.growth.period}</span>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {t.growth.description}
+                  </p>
+                </div>
+                
+                <div className="h-px bg-lime-100 mb-6" />
+
+                <ul className="space-y-4 mb-8 flex-grow">
+                  {t.growth.features.map((feature: string, idx: number) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <div className="mt-1 bg-lime-500 rounded-full p-0.5">
+                        <Check className="w-3.5 h-3.5 text-white" />
+                      </div>
+                      <span className="text-sm font-medium text-gray-800">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="bg-lime-50 rounded-xl p-4 mb-6 border border-lime-100">
+                  <p className="text-xs text-lime-700 italic font-medium">
+                    {t.growth.ideal}
+                  </p>
+                </div>
+
+                <button 
+                  onClick={() => handleWhatsAppClick(t.growth.name)}
+                  className="w-full py-4 px-6 rounded-xl bg-lime-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-lime-600 transition-all border-b-4 border-lime-700 active:border-b-0 active:translate-y-[2px] shadow-lg"
+                >
+                  {t.ctaGrowth}
+                  <ArrowRight className="w-4 h-4 shadow-sm" />
+                </button>
               </div>
-              
-              <div className="h-px bg-lime-100 mb-6" />
-
-              <ul className="space-y-4 mb-8 flex-grow">
-                {t.growth.features.map((feature: string, idx: number) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <div className="mt-1 bg-lime-500 rounded-full p-0.5">
-                      <Check className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-sm font-medium text-gray-800">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="bg-lime-50 rounded-xl p-4 mb-6 border border-lime-100">
-                <p className="text-xs text-lime-700 italic font-medium">
-                  {t.growth.ideal}
-                </p>
-              </div>
-
-              <button 
-                onClick={() => handleWhatsAppClick(t.growth.name)}
-                className="w-full py-4 px-6 rounded-xl bg-lime-500 text-white font-bold flex items-center justify-center gap-2 hover:bg-lime-600 transition-all border-b-4 border-lime-700 active:border-b-0 active:translate-y-[2px] shadow-lg"
-              >
-                {t.ctaGrowth}
-                <ArrowRight className="w-4 h-4 shadow-sm" />
-              </button>
             </ShineBorder>
           </BlurFade>
 

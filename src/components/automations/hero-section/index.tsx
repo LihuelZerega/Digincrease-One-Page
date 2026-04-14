@@ -129,9 +129,9 @@ export default function HeroSection() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-clipboard-clock-icon lucide-clipboard-clock"
                     >
                       <path d="M16 14v2.2l1.6 1" />
@@ -163,9 +163,9 @@ export default function HeroSection() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-trending-down-icon lucide-trending-down"
                     >
                       <path d="M16 17h6v-6" />
@@ -194,9 +194,9 @@ export default function HeroSection() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-calendar-sync-icon lucide-calendar-sync"
                     >
                       <path d="M11 10v4h4" />
@@ -231,9 +231,9 @@ export default function HeroSection() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"
                     >
                       <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
@@ -273,9 +273,9 @@ export default function HeroSection() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#82C915"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           className="lucide lucide-bot-message-square-icon lucide-bot-message-square"
                         >
                           <path d="M12 6V2H8" />
@@ -309,9 +309,9 @@ export default function HeroSection() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#82C915"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           className="lucide lucide-settings-icon lucide-settings"
                         >
                           <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
@@ -340,9 +340,9 @@ export default function HeroSection() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#82C915"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           className="lucide lucide-chart-network-icon lucide-chart-network"
                         >
                           <path d="m13.11 7.664 1.78 2.672" />
@@ -377,9 +377,9 @@ export default function HeroSection() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#82C915"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           className="lucide lucide-link-icon lucide-link"
                         >
                           <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
