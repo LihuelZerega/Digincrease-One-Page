@@ -207,6 +207,9 @@ function Index() {
               <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
                 +34 624 35 44 76
               </p>
+              <p className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+                +54 9 11 2565-3766
+              </p>
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
